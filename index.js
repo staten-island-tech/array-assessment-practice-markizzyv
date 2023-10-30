@@ -87,13 +87,39 @@ const titles = [
 //Array of authors and the book they wrote
 //"--- wrote --- in ---"
 
+books.filter((books)=> books.name,books.authorFirst)
+console.log(books) 
+ 
+
 //Sort books from oldest to most recent
+// CORRECT
+
+const publishDate = [1997, 1960, 1951, 1937, 1925, 1918, 1868, 1867, 1861, 1813]
+publishDate.sort();
+console.log(publishDate);
 
 //sort books alphabetically
+//CORRECT
+
+let sortedArray = titles.sort();
+console.log(sortedArray);
+
 
 //Find who wrote War and Peace
 
+function WarandPeace (author) {
+  return author.authorFirst === "Leo"
+}
+console.log(books.find(WarandPeace))
+
+
 //how many books were written before 1900?
+
+let before1900 = 0
+  if (publishDate < 1900)
+  return true;
+console.log(before1900)
+
 
 //was there at least one book published within the last 100 years?
 
